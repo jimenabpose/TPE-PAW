@@ -1,0 +1,24 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org/">
+	<head><link href="css/style.css" type="text/css" rel="stylesheet" /></head>
+	<body>
+		<div id="logo">
+			<img wicket:id="logoImage"></img>
+		</div>
+		<div id="login">
+			<h3><wicket:message key="page.title">Project select</wicket:message></h3>
+			<em><div wicket:id="feedback"/></em>
+			<form wicket:id="form">
+				<fieldset id="marcoLogin">
+					<select wicket:id="project" ></select>
+					<br></br>
+					<input wicket:id="accept" type="submit" />
+				</fieldset> 
+			</form>
+		</div>
+		<a wicket:id="createProject"><wicket:message key="createProject" >Create project</wicket:message></a>
+		<br></br>
+		<a wicket:id="logout"><wicket:message key="logout" >logout</wicket:message></a>
+		<br></br>
+		<a wicket:id="administrateUsers"><wicket:message key="administrateUsers" >Administrate users</wicket:message></a>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org/">
+	<head><link href="css/style.css" type="text/css" rel="stylesheet" /></head>
+	<body>
+			
+		<h3><wicket:message key="trackerName">itrack</wicket:message>
+		
+			<!-- Si hay un usuario loggeado lo muestro -->
+		<div id="user_logged">
+				<span wicket:id="profileLinkUser">guest</span> 
+				<span wicket:id="separator"> | </span>
+				<span wicket:id="project">project</span> 
+		</div>
+		
+		</h3>
+		
+		<div id="navegador">
+			<ul>
+				<li><a wicket:id="viewIssues"><wicket:message key="viewIssues" >viewIssues</wicket:message></a></li>
+				
+				<li><a wicket:id="createIssue"><wicket:message key="createIssue" >createIssue</wicket:message></a></li>
+				
+				<li><a wicket:id="projectDetail"><wicket:message key="projectDetail" >projectDetail</wicket:message></a></li>
+				
+				<li><a wicket:id="editProject"><wicket:message key="editProject" >editProject</wicket:message></a></li>
+				
+				<li><a wicket:id="registerUser"><wicket:message key="registerUser" >registerUser</wicket:message></a></li>
+
+				<li><a wicket:id="eraseUser"><wicket:message key="eraseUser" >eraseUser</wicket:message></a></li>
+				
+				<li><a wicket:id="logout"><wicket:message key="logout" >logout</wicket:message></a></li>
+
+				<li><a wicket:id="selectProject"><wicket:message key="selectProject" >selectProject</wicket:message></a></li>
+				
+				<li><a wicket:id="login"><wicket:message key="login" >login</wicket:message></a></li>
+			</ul>
+		</div>
+		
+		<wicket:child />
+	</body>
+</html>

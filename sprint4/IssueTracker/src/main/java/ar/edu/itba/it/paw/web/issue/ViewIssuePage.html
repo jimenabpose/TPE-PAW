@@ -1,0 +1,120 @@
+<html>
+	<body>
+		<wicket:extend>
+		
+<em><div wicket:id="feedback"/></em>		
+<h2><wicket:message key="page.title"/></h2>
+
+<table>
+	<tr>
+		<td><strong><wicket:message key="code"/></strong></td>
+		<td><span wicket:id="code"/></td>
+	</tr>
+	<tr>
+		<td><strong><wicket:message key="title"/></strong></td>
+		<td><span wicket:id="title" /></td>
+	</tr>
+	<tr>
+		<td><strong><wicket:message key="description"/></strong></td>
+		<td><span wicket:id="description" /></td>
+	</tr>
+	<tr>
+		<td><strong><wicket:message key="creationDate"/></strong></td>
+		<td><fmt:formatDate pattern="dd/MM/yyyy" type="date" wicket:id="creationDate" /></td>
+	</tr>
+	<tr>
+		<td><strong><wicket:message key="estimatedTime"/></strong></td>
+		<td><span wicket:id="estimatedTime"/></td>
+	</tr>
+	<tr>
+		<td><strong><wicket:message key="assignedTo"/></strong></td>
+		<td><span wicket:id="assignedTo" /></td>
+	</tr>
+	<tr>
+		<td><strong><wicket:message key="reportedBy"/></strong></td>
+		<td><span wicket:id="reportedBy" /></td>
+	</tr>
+	<tr>
+		<td><strong><wicket:message key="priority"/></strong></td>
+		<td><span wicket:id="priority" /></td>
+	</tr>
+	<tr>
+		<td><strong><wicket:message key="type"/></strong></td>
+		<td><span wicket:id="type" /></td>
+	</tr>
+	<tr>
+		<td><strong><wicket:message key="state"/></strong></td>
+		<td><span wicket:id="state" /></td>
+	</tr>
+	<tr>
+		<td><strong><wicket:message key="resolution"/></strong></td>
+		<td><span wicket:id="resolution" /></td>
+	</tr>
+	<tr>
+		<td><strong><wicket:message key="resolutionVersions"/></strong></td>
+		<td>
+		<ul>
+		<div wicket:id="resolutionVersions">
+ 			<li><span wicket:id="name" /><wicket:message key="text.releaseDate"/>
+ 				<fmt:formatDate pattern="dd/MM/yyyy" wicket:id="releaseDate"/>
+ 			</li>
+ 		</div>
+ 		</ul>
+ 		</td>
+	</tr>
+	<tr>
+		<td><strong><wicket:message key="affectedVersions"/></strong></td>
+		<td>
+		<ul>
+		<div wicket:id="affectedVersions">
+ 			<li><span wicket:id="name" /><wicket:message key="text.releaseDate"/>
+ 				<fmt:formatDate pattern="dd/MM/yyyy" wicket:id="releaseDate"/>
+ 			</li>
+ 		</div>
+ 		</ul>
+ 		</td>
+	</tr>
+
+</table>
+
+<div id="issue_resolution"><wicket:message key="resolve"/>
+<form wicket:id="resolveIssueForm">
+		<select wicket:id="resolution"/>
+		<input wicket:id="select" type="submit"/>
+</form>
+</div>
+
+<!-- Para marcar la tarea como ONCOURSE o OPEN-->
+<a wicket:id="changeStateOnCourse"><wicket:message key="changeState.oncourse"/></a>
+<a wicket:id="changeStateOpen"><wicket:message key="changeState.open"/></a>
+
+<!-- Para que el usuario se encargue de la tarea -->
+<div id="asignation">
+	<a wicket:id="assignIssue"><wicket:message key="assignIssue"/></a>
+</div>
+
+<!-- Para que el lider cierre la tarea la tarea -->
+<div id="asignation">
+	<a wicket:id="closeIssue"><wicket:message key="closeIssue"/></a>
+</div>
+
+<!-- Para editar la tarea -->
+<div id="edition">
+	<a wicket:id="editIssue"><wicket:message key="editIssue"/></a>
+</div>
+
+<div wicket:id="issueFollowersPanel" />
+
+<div wicket:id="issueChangesPanel" />
+
+<div wicket:id="issueRelationsPanel" />
+
+<div wicket:id="issueVotesPanel" />
+
+<div wicket:id="issueJobsPanel" />
+
+<div wicket:id="issueCommentsPanel" />
+
+		</wicket:extend>
+	</body>
+</html>

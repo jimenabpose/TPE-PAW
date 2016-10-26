@@ -1,0 +1,53 @@
+<html>
+	<body>
+		<wicket:extend>
+			<h3><wicket:message key="page.title">View project</wicket:message></h3>
+			<table>
+				<tr>
+					<td><wicket:message key="code">Code</wicket:message></td>
+					<td><span wicket:id="code">Project Code</span></td>
+				</tr>
+				<tr>
+					<td><wicket:message key="name">Name</wicket:message></td>
+					<td><span wicket:id="name">Project Name</span></td>
+				</tr>
+				<tr>
+					<td><wicket:message key="description">Description</wicket:message></td>
+					<td><span wicket:id="description">Project Description</span></td>
+				</tr>
+				<tr>
+					<td><wicket:message key="leader">Leader</wicket:message></td>
+					<td><span wicket:id="profileLinkLeader">Project Leader</span></td>
+				</tr>
+				<tr>
+					<td><wicket:message key="public">Public</wicket:message></td>
+					<td><span wicket:id="public">Project is Public</span></td>
+				</tr>
+			</table>
+			<h3><wicket:message key="projectMembers">Project Members</wicket:message></h3>
+			
+			<li wicket:id="projectMembers">
+				<ul>
+					<span wicket:id="profileLinkUser">username</span>
+					<span wicket:id="firstName">firstname</span>
+					<span wicket:id="lastName">lastname</span>
+				</ul>
+			</li>
+			
+			<br></br>
+			<a wicket:id="createProjectVersion"><wicket:message key="createProjectVersion" >Create project version</wicket:message></a>
+			<br></br>
+			<a wicket:id="listProjectVersions"><wicket:message key="listProjectVersions" >Create project version</wicket:message></a>
+			<br></br>
+			<a wicket:id="consultProjectState"><wicket:message key="consultProjectState" >Consult project state</wicket:message></a>
+			<br></br>
+			<a wicket:id="selectProjectParticipants"><wicket:message key="selectProjectParticipants" >Select project participants</wicket:message></a>
+			<br></br>
+			<br></br>
+			<img wicket:id="chartContainer">
+			<br></br>
+			<br></br>
+			<div wicket:id="projectIssueChanges"/>
+		</wicket:extend>
+	</body>
+</html>

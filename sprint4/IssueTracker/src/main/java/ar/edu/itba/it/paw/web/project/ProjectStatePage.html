@@ -1,0 +1,32 @@
+<html>
+	<body>
+		<wicket:extend>
+			<h3><wicket:message key="page.title">Project state</wicket:message></h3>
+			<table>
+				<th></th>
+				<th><wicket:message key="quantity">Quantity</wicket:message></th>
+				<th><wicket:message key="estimatedTime">Estimated Time</wicket:message></th>
+				<tr>
+					<td><strong><wicket:message key="openIssues">Open issues</wicket:message></strong></td>
+					<td><span wicket:id="countOpen">Count open</span></td>
+					<td><span wicket:id="timeOpen">Time open</span></td>
+				</tr>
+				<tr>
+					<td><strong><wicket:message key="onCourseIssues">On course issues</wicket:message></strong></td>
+					<td><span wicket:id="countOnCourse">Count on course</span></td>
+					<td><span wicket:id="timeOnCourse">Time on course</span></td>
+				</tr>
+				<tr>
+					<td><strong><wicket:message key="finishedIssues">Finished issues</wicket:message></strong></td>
+					<td><span wicket:id="countFinished">Count finished</span></td>
+					<td><span wicket:id="timeFinished">Time finished</span></td>
+				</tr>
+				<tr>
+					<td><strong><wicket:message key="closedIssues">Closed issues</wicket:message></strong></td>
+					<td><span wicket:id="countClosed">Count closed</span></td>
+					<td><span wicket:id="timeClosed">Time closed</span></td>
+				</tr>
+			</table>
+		</wicket:extend>
+	</body>
+</html>

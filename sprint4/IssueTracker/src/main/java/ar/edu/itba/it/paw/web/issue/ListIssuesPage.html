@@ -1,0 +1,86 @@
+<html>
+<body>
+<wicket:extend>
+<div id="content">
+<span><wicket:message key="message"/></span>
+<h2><wicket:message key="page.title">Listado de tareas</wicket:message></h2>
+
+<div id="issue_filter">
+<div wicket:id="feedback"/>
+<form wicket:id="issueFilter">
+	
+<fieldset>
+<label><h3><wicket:message key="searchBy">Buscar por:</wicket:message></h3></label>
+<table>
+	<tr>
+		<td><wicket:message key="code">C�digo</wicket:message></td>
+		<td><input wicket:id="inpCode" type="text" maxlength="30"/></td>
+		<td><wicket:message key="title">T�tulo:</wicket:message></td>
+		<td><input wicket:id="inpTitle" type="text" maxlength="30"/></td>
+		<td><wicket:message key="description">Descripci�n:</wicket:message></td>
+		<td><input wicket:id="inpDescription" type="text" maxlength="256"/></td>
+	</tr>
+	<tr>
+		<td><wicket:message key=reportedBy>Reportado por:</wicket:message></td>
+		<td>
+			<select wicket:id="inpReporter"/>
+		</td>
+		<td><wicket:message key=assignedTo>Asignado a:</wicket:message></td>
+		<td>
+			<select wicket:id="inpAssignee"/>
+		</td>
+	</tr>
+	<tr>
+		<td><wicket:message key=state>Estado:</wicket:message></td>
+		<td>
+			<select wicket:id="inpState"/>
+		</td>
+		<td><wicket:message key="resolution">Resoluci�n:</wicket:message></td>
+		<td>	
+			<select wicket:id="inpResolution"/>
+		</td>
+		<td><wicket:message key="type">Tipo:</wicket:message></td>
+		<td>	
+			<select wicket:id="inpIssueType"/>
+		</td>
+	</tr>
+	<tr>
+		<td><wicket:message key="resVersions">Versiones de resolucion:</wicket:message></td>
+		<td>	
+			<select wicket:id="inpResolutionVersion"/>
+		</td>
+		<td><wicket:message key="affVersions">Versiones afectadas:</wicket:message></td>
+		<td>	
+			<select wicket:id="inpAffectedVersion"/>
+		</td>
+	</tr>
+	<tr>
+		<td><wicket:message key="from">Desde:</wicket:message></td>
+		<td><input wicket:id="inpDateBegin" /></td>
+		<td><wicket:message key="to">Hasta:</wicket:message></td>
+		<td><input wicket:id="inpDateEnd" /></td>
+	</tr>
+</table>
+
+<div class="filter_field">
+<input wicket:id=search type="submit"/>
+</div>
+
+<div class="filter_field" style="width:100%">
+</div>
+</fieldset>
+</form>
+</div>
+<div wicket:id="issuesPanel"/>
+<br></br>
+<a wicket:id="listActive"><wicket:message key="listActive">Ver mis tareas activas</wicket:message></a>
+<br></br>
+<a wicket:id="sumJobReport"><wicket:message key="sumJobReport">Horas trabajadas</wicket:message></a>
+<br></br>
+<a wicket:id="listFollowingIssues"><wicket:message key="listFollowingIssues">Ver las tareas que sigo</wicket:message></a>
+<br></br>
+
+</div>
+</wicket:extend>
+</body>
+</html>

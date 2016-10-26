@@ -1,0 +1,35 @@
+<html>
+	<body>
+		<wicket:panel>
+		<div>
+			<table border=1>
+				<tr>
+					<th><wicket:message key="code">C�digo</wicket:message></th>
+					<th><wicket:message key="title">T�tulo</wicket:message></th>
+					<th><wicket:message key="creationDate">Fecha de creaci�n</wicket:message></th>
+					<th><wicket:message key="assignedTo">Asignada a</wicket:message></th>
+					<th><wicket:message key="reportedBy">Creada por</wicket:message></th>
+					<th><wicket:message key="state">Estado</wicket:message></th>
+					<th><wicket:message key="resolution">Resoluci�n</wicket:message></th>
+					<th><wicket:message key="priority">Prioridad</wicket:message></th>
+					<th><wicket:message key="type">Tipo</wicket:message></th>
+				</tr>
+				<tr wicket:id="issueList">
+						<td wicket:id="code"/>
+						<td><a wicket:id="titleLink"><label wicket:id="title"/></a></td>
+						<td wicket:id="creationDate"/>
+						<td><div wicket:id="profileLinkAssignee"/></td>
+<!-- 						<td wicket:id="assignee"/> -->
+						<td><div wicket:id="profileLinkReporter"/></td>
+<!-- 						<td wicket:id="reporter"/> -->
+						<td wicket:id="state"/>
+						<td wicket:id="resolution"/>
+						<td wicket:id="priority"/>
+						<td wicket:id="issueType"/>
+				</tr>
+				<div wicket:id="navigator"></div>
+			</table>
+		</div>
+		</wicket:panel>
+	</body>
+</html>

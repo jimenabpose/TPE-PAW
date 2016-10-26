@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+	version="2.4">
+
+  	<servlet>
+		<servlet-name>Index</servlet-name>
+		<servlet-class>ar.edu.itba.it.paw.web.Index</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Index</servlet-name>
+		<url-pattern>/index</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RegisterUser</servlet-name>
+		<servlet-class>ar.edu.itba.it.paw.web.RegisterUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterUser</servlet-name>
+		<url-pattern>/register_user</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CreateIssue</servlet-name>
+		<servlet-class>ar.edu.itba.it.paw.web.CreateIssue</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CreateIssue</servlet-name>
+		<url-pattern>/create_issue</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CreateProject</servlet-name>
+		<servlet-class>ar.edu.itba.it.paw.web.CreateProject</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CreateProject</servlet-name>
+		<url-pattern>/create_project</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ListIssues</servlet-name>
+		<servlet-class>ar.edu.itba.it.paw.web.ListIssues</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListIssues</servlet-name>
+		<url-pattern>/issue_list</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Logout</servlet-name>
+		<servlet-class>ar.edu.itba.it.paw.web.Logout</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Logout</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SelectProject</servlet-name>
+		<servlet-class>ar.edu.itba.it.paw.web.SelectProject</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SelectProject</servlet-name>
+		<url-pattern>/select_project</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ViewIssue</servlet-name>
+		<servlet-class>ar.edu.itba.it.paw.web.ViewIssue</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewIssue</servlet-name>
+		<url-pattern>/view_issue</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SetEditingIssue</servlet-name>
+		<servlet-class>ar.edu.itba.it.paw.web.SetEditingIssue</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SetEditingIssue</servlet-name>
+		<url-pattern>/set_editing_issue</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SetEditingProject</servlet-name>
+		<servlet-class>ar.edu.itba.it.paw.web.SetEditingProject</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SetEditingProject</servlet-name>
+		<url-pattern>/set_editing_project</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AsignIssue</servlet-name>
+		<servlet-class>ar.edu.itba.it.paw.web.AsignIssue</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AsignIssue</servlet-name>
+		<url-pattern>/issue_asign</url-pattern>
+	</servlet-mapping> 
+	
+	<servlet>
+		<servlet-name>ListMyActiveIssues</servlet-name>
+		<servlet-class>ar.edu.itba.it.paw.web.ListMyActiveIssues</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListMyActiveIssues</servlet-name>
+		<url-pattern>/myactiveissue_list</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ResolveIssue</servlet-name>
+		<servlet-class>ar.edu.itba.it.paw.web.ResolveIssue</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ResolveIssue</servlet-name>
+		<url-pattern>/resolve_issue</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CloseIssue</servlet-name>
+		<servlet-class>ar.edu.itba.it.paw.web.CloseIssue</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CloseIssue</servlet-name>
+		<url-pattern>/close_issue</url-pattern>
+	</servlet-mapping>
+
+	<filter>
+		<filter-name>ErrorFilter</filter-name>
+		<filter-class>ar.edu.itba.it.paw.web.filter.ErrorFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>ErrorFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>UserFilter</filter-name>
+		<filter-class>ar.edu.itba.it.paw.web.filter.UserFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>UserFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>RegularUserFilter</filter-name>
+		<filter-class>ar.edu.itba.it.paw.web.filter.RegularUserFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>RegularUserFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+</web-app>

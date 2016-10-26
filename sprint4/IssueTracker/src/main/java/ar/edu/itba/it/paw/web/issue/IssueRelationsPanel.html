@@ -1,0 +1,29 @@
+<html>
+<body>
+<wicket:panel>
+<fieldset>
+<div id="issue_relation">
+<h3><wicket:message key="page.title">Seleccione la relaci�n para la tarea</wicket:message></h3> 
+	<form wicket:id="relateIssueForm">
+		<select wicket:id="relation"/>
+		<select wicket:id="relatedIssue"/>
+		<input type="submit" wicket:id="relate"/>
+	</form>
+</div>
+
+	<h3><wicket:message key="dependingIssues">Tareas de las que depende:</wicket:message></h3>
+			<div wicket:id="issueDependencyListPanel"/>
+
+	<h3><wicket:message key="necessaryIssues">Tareas para las que es necesaria:</wicket:message></h3>
+			<div wicket:id="necessaryForIssuePanel"/>
+
+	<h3><wicket:message key="relatedIssues">Tareas con las que esta relacionada:</wicket:message></h3>
+			<div wicket:id="relatedWithIssuePanel"/>
+
+	<h3><wicket:message key="duplicatedIssues">Tareas con las que esta duplicada:</wicket:message></h3>
+			<div wicket:id="duplicatedWithIssuePanel"/>
+
+</fieldset>
+</wicket:panel>
+</body>
+</html>

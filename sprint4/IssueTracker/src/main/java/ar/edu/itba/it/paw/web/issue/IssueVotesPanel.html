@@ -1,0 +1,37 @@
+<html>
+<body>
+<wicket:panel>
+<fieldset>
+			<td>
+			<h3><span wicket:id="noVotes">No hay votos emitidos sobre esta tarea</span></h3>
+			</td>
+			<td>
+			<h3><wicket:message key="votes">Votos:</wicket:message></h3>
+			</td>
+			<table border="1">
+				<thead>
+					<tr>
+						<th><wicket:message key="user">Usuario</wicket:message></th>
+					</tr>
+				</thead>
+				<tbody>
+					<div wicket:id="votersList">
+						<tr>
+							<td><span wicket:id="username" /></td>
+						</tr>
+					</div>
+				</tbody>
+			</table>
+	
+				<div id="removeVoter">
+					<a wicket:id="addVoter"><wicket:message key="vote">Votar</wicket:message></a>
+				</div>
+
+				<div id="addVoter">
+					<a wicket:id="removeVoter"><wicket:message key="deleteVote">Eliminar mi voto</wicket:message></a>
+				</div>
+
+</fieldset>
+</wicket:panel>
+</body>
+</html>

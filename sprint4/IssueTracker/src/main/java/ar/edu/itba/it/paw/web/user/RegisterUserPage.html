@@ -1,0 +1,25 @@
+<html>
+<body>
+	<wicket:extend>
+	<div id="content">
+		<h2><wicket:message key="page.title"/></h2>
+		<em><div wicket:id="feedback"/></em>
+		<form wicket:id="form">
+			<div wicket:id="usersInfo"/>
+			<div>
+				<label><wicket:message key="password">Password</wicket:message><em>*</em></label> 
+				<input wicket:id="password" type="password" maxlength="10" />
+			</div>
+			<div>
+				<label><wicket:message key="rep_password">Repeated password</wicket:message><em>*</em> </label>
+				<input wicket:id="rep_password" type="password" maxlength="10" />
+			</div>
+			<div>
+				<em><label><wicket:message key="req_fields">Required fields *</wicket:message></label></em>		
+			</div>
+			<input type="submit" wicket:id="register" />
+		</form>
+	</div>
+	</wicket:extend>
+</body>
+</html>

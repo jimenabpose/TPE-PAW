@@ -1,0 +1,28 @@
+<html>
+	<body>
+		<wicket:panel>
+			<div id="content">
+			<em><div wicket:id="feedback"/></em>
+				<table border="1">
+					<tr>
+						<th><wicket:message key="name">Name</wicket:message></th>
+						<th><wicket:message key="description">Description</wicket:message></th>
+						<th><wicket:message key="releaseDate">Release date</wicket:message></th>
+						<th><wicket:message key="state">state</wicket:message></th>
+						<th><span wicket:id="progressTitle"/></th>
+					</tr>
+					<tr wicket:id="versionList">
+							<td wicket:id="name"/>
+							<td wicket:id="description"/>
+							<td wicket:id="releaseDate"/>
+							<td wicket:id="state"/>
+							<td wicket:id="progress"/>
+							<td><a wicket:id="edit"><wicket:message key="edit">Edit</wicket:message></a></td>
+							<td><a wicket:id="delete"><wicket:message key="delete">Delete</wicket:message></a></td>
+							<td><a wicket:id="view"><wicket:message key="view">View</wicket:message></a></td>
+					</tr>
+				</table>
+			</div>
+		</wicket:panel>
+	</body>
+</html>

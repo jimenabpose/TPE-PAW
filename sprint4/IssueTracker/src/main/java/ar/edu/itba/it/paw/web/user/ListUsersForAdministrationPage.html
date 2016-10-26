@@ -1,0 +1,25 @@
+<html>
+<body>
+<wicket:extend>
+<div id="content">
+<h2><wicket:message key="title">Unreleased versions list</wicket:message></h2>
+	<em><div wicket:id="feedback"/></em>
+	<table border="1">
+		<tr>
+			<th><wicket:message key="username">Username</wicket:message></th>
+			<th><wicket:message key="firstname">Firstname</wicket:message></th>
+			<th><wicket:message key="lastname">Lastname</wicket:message></th>
+		</tr>
+		<tr wicket:id="userList">
+				<td wicket:id="username"/>
+				<td wicket:id="firstName"/>
+				<td wicket:id="lastName"/>
+				<td><a wicket:id="accept"><wicket:message key="accept">Accept</wicket:message></a></td>
+				<td><a wicket:id="deny"><wicket:message key="deny">Deny</wicket:message></a></td>
+		</tr>
+	</table>
+
+</div>
+</wicket:extend>
+</body>
+</html>

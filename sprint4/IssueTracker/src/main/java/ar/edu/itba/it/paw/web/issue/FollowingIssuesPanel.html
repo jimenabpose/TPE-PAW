@@ -1,0 +1,34 @@
+<html>
+<body>
+<wicket:panel>
+<fieldset>
+			<td>
+			<h3><wicket:message key="followers">Followers</wicket:message></h3>
+			</td>
+			<table border="1">
+				<thead>
+					<tr>
+						<th><wicket:message key="user">User</wicket:message></th>
+					</tr>
+				</thead>
+				<tbody>
+					<div wicket:id="followersList">
+						<tr>
+							<td><span wicket:id="username" /></td>
+						</tr>
+					</div>
+				</tbody>
+			</table>
+	
+				<div id="followIssue">
+					<a wicket:id="followIssue"><wicket:message key="followIssue">Follow issue</wicket:message></a>
+				</div>
+
+				<div id="stopFollowingIssue">
+					<a wicket:id="stopFollowingIssue"><wicket:message key="stopFollowingIssue">Stop following issue</wicket:message></a>
+				</div>
+
+</fieldset>
+</wicket:panel>
+</body>
+</html>

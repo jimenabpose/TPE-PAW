@@ -1,0 +1,27 @@
+<html>
+	<body>
+		<wicket:panel>
+			<div>
+				<label><wicket:message key="name">Name</wicket:message>:</label><em>*</em>
+				<input wicket:id="name" type="text" maxlength="20"/>
+			</div>
+			<div>
+				<label><wicket:message key="code">Code</wicket:message>:</label><em>*</em>
+				<input wicket:id="code" type="text" maxlength="10"/>
+			</div>
+			<div>
+				<label><wicket:message key="description">Description</wicket:message>:</label>
+				<input wicket:id="description" type="text" maxlength="250"/>
+			</div>
+			<div>
+				<label><wicket:message key="leader">Leader</wicket:message>:</label><em>*</em>
+				<select wicket:id="leader" ></select>
+			</div>
+			<div>
+				<label><wicket:message key="isPublic">Public</wicket:message>:</label>
+				<input type="checkbox" wicket:id="isPublic" />
+			</div>
+			<em>Campos requeridos *</em>
+		</wicket:panel>
+	</body>
+</html>

@@ -1,0 +1,48 @@
+<html>
+<body>
+<wicket:panel>
+
+<fieldset>
+	<h3>
+		<wicket:message key="modifications">Modificaciones:</wicket:message>
+	</h3>
+	<table border="1">
+		<thead>
+			<tr>
+				<th><wicket:message key="issue">Tarea</wicket:message>
+				</th>
+				<th><wicket:message key="user">Usuario</wicket:message>
+				</th>
+				<th><wicket:message key="date">Fecha y hora</wicket:message>
+				</th>
+				<th><wicket:message key="field">Campo</wicket:message>
+				</th>
+				<th><wicket:message key="prevValue">Valor Anterior</wicket:message>
+				</th>
+				<th><wicket:message key="newValue">Valor Nuevo</wicket:message>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<div wicket:id="issueChanges">
+				<tr>
+					<td><span wicket:id="issue.title" />
+					</td>
+					<td><span wicket:id="changer" />
+					</td>
+					<td><fmt:formatDate pattern="dd/MM/yyyy HH:mm:ss" wicket:id="changeDate" />
+					</td>
+					<td><span wicket:id="field" />
+					</td>
+					<td><span wicket:id="oldValue" />
+					</td>
+					<td><span wicket:id="newValue" />
+					</td>
+				</tr>
+			</div>
+		</tbody>
+	</table>
+</fieldset>
+</wicket:panel>
+</body>
+</html>

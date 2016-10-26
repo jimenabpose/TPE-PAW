@@ -1,0 +1,53 @@
+<html>
+	<body>
+		<wicket:extend>
+			<h3><wicket:message key="page.title">View version</wicket:message></h3>
+			<table>
+				<tr>
+					<td><wicket:message key="name">Name</wicket:message></td>
+					<td><span wicket:id="name">Name</span></td>
+				</tr>
+				<tr>
+					<td><wicket:message key="state">State</wicket:message></td>
+					<td><span wicket:id="state">State</span></td>
+				</tr>
+				<tr>
+					<td><wicket:message key="releaseDate">Release date</wicket:message></td>
+					<td><span wicket:id="releaseDate">Release date</span></td>
+				</tr>
+				<tr>
+					<td><wicket:message key="openIssues">Open issues</wicket:message></td>
+					<td><span wicket:id="openIssues">Open issues</span></td>
+				</tr>
+				<tr>
+					<td><wicket:message key="finishedIssues">Finished issues</wicket:message></td>
+					<td><span wicket:id="finishedIssues">Finished issues</span></td>
+				</tr>
+				<tr>
+					<td><wicket:message key="onCourseIssues">On course issues</wicket:message></td>
+					<td><span wicket:id="onCourseIssues">On course issues</span></td>
+				</tr>
+				<tr>
+					<td><wicket:message key="closedIssues">Closed issues</wicket:message></td>
+					<td><span wicket:id="closedIssues">Closed issues</span></td>
+				</tr>
+				<tr>
+					<td><wicket:message key="totalEstimatedTime">Total estimated time</wicket:message></td>
+					<td><span wicket:id="totalEstimatedTime">Total estimated time</span>hs</td>
+				</tr>
+				<tr>
+					<td><wicket:message key="totalWorkedTime">Total worked time</wicket:message></td>
+					<td><span wicket:id="totalWorkedTime">Total worked time</span>hs</td>
+				</tr>
+				<tr>
+					<td><wicket:message key="timeToFinish">Time to finish</wicket:message></td>
+					<td><span wicket:id="timeToFinish">Time to finish</span>hs</td>
+				</tr>
+			</table>
+			<br></br>
+			<img wicket:id="chartContainer">
+			<br></br>
+			<a wicket:id="versionNotes"><wicket:message key="versionNotes" >Version notes</wicket:message></a>
+		</wicket:extend>
+	</body>
+</html>

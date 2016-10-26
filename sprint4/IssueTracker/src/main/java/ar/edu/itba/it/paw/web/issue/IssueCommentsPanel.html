@@ -1,0 +1,41 @@
+
+<html>
+<body>
+<wicket:panel>
+<fieldset>
+			<td>
+			<h3><wicket:message key="comments">Comentarios:</wicket:message></h3>
+			</td>
+			<table border="1">
+				<thead>
+					<tr>
+						<th><wicket:message key="user">Usuario</wicket:message></th>
+						<th><wicket:message key="comment">Comentario</wicket:message></th>
+						<th><wicket:message key="date">Fecha</wicket:message></th>
+					</tr>
+				</thead>
+				<tbody>
+					<div wicket:id="commentsList">
+						<tr>
+							<td wicket:id="user" />
+							<td wicket:id="text" />
+							<td wicket:id="creationDate" />
+						</tr>
+					</div>
+				</tbody>
+			</table>
+
+		<h3><wicket:message key="newComment">Publicar un nuevo comentario</wicket:message></h3>
+		<form wicket:id="addComment">
+			
+			<div class="form-field">
+			<label><wicket:message key="comment">Comentario:</wicket:message></label><em>*</em>
+			<input wicket:id="text" type="text" maxlengt="250"/>
+			<div class="form-buttons"><input type="submit" wicket:id="publish" /></div>
+			</div>
+			
+		</form>
+</fieldset>
+</wicket:panel>
+</body>
+</html>

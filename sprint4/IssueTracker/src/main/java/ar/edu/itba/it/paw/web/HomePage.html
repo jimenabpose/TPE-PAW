@@ -1,0 +1,30 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org/">
+	<head><link href="css/style.css" type="text/css" rel="stylesheet" /></head>
+	<body>
+		<div id="logo">
+			<img wicket:id="logoImage"></img>
+		</div>
+		<div id="login">
+			<h2><wicket:message key="page.title"></wicket:message></h2>
+	
+			<em><div wicket:id="feedback" class="formErrors"></div></em>
+			<form wicket:id="loginForm">
+				<fieldset id="marcoLogin">
+					<div>
+						<label><wicket:message key="username">Username</wicket:message>:</label>
+						<input type="text" wicket:id="username" />
+					</div>
+					<div>
+						<label><wicket:message key="password">Password</wicket:message>:</label>
+						<input type="password" wicket:id="password" />
+					</div>
+					<input type="submit" wicket:id="login" />
+				</fieldset>
+			</form>
+		</div>
+		<ul>
+			<li><a wicket:id="publicUserAccess"><wicket:message key="publicUserAccess" >Public Access</wicket:message></a></li>
+			<li><a wicket:id="registerSolicitation"><wicket:message key="registerSolicitation" >Register Solicitation</wicket:message></a></li>
+		</ul>
+	</body>
+</html>

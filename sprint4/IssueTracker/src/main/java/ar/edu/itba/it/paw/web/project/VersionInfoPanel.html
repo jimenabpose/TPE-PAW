@@ -1,0 +1,24 @@
+<html>
+	<body>
+		<wicket:panel>
+			<div>
+				<label><wicket:message key="name">Name</wicket:message>:</label><em>*</em>
+				<input wicket:id="name" />
+			</div>
+			<div>
+				<label><wicket:message key="releaseDate">Release date</wicket:message>:</label><em>*</em>
+				<input wicket:id="releaseDate" />
+			</div>
+			<div>
+				<label><wicket:message key="description">Description</wicket:message>:</label>
+				<input wicket:id="description" />
+			</div>
+			<div>
+				<label><wicket:message key="state">State</wicket:message>:</label><em>*</em>
+				<select wicket:id="state" ></select>
+				<span wicket:id="stateInfo"/>
+			</div>
+			<em>Campos requeridos *</em>
+		</wicket:panel>
+	</body>
+</html>

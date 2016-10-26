@@ -1,0 +1,58 @@
+<html>
+<body>
+<wicket:panel>
+<fieldset>
+
+			<td>
+			<h3><span wicket:id="noJobsRegistered">No hay trabajos registrados en esta tarea</span></h3>
+			</td>
+
+			<td>
+			<h3><wicket:message key="registeredJobs">Trabajos registrados:</wicket:message></h3>
+			</td>
+			<table border="1">
+				<thead>
+					<tr>
+						<th><wicket:message key="user">Usuario</wicket:message></th>
+						<th><wicket:message key="date">Fecha y hora</wicket:message></th>
+						<th><wicket:message key="dedicatedTime">Tiempo dedicado</wicket:message></th>
+						<th><wicket:message key="description">Descripci�n</wicket:message></th>
+					</tr>
+				</thead>
+				<tbody>
+					<div wicket:id="jobList">
+						<tr>
+							<td><span wicket:id="user.username" /></td>
+							<td><fmt:formatDate pattern="dd/MM/yyyy HH:mm:ss" wicket:id="date" /></td>
+							<td><span wicket:id="elapsedTime" /></td>
+							<td><span wicket:id="description" /></td>
+						</tr>
+					</div>
+				</tbody>
+			</table>
+
+		<h3><wicket:message key="registerNewJob">Registrar un nuevo trabajo</wicket:message></h3>
+		<form wicket:id="jobForm">
+			<table>
+				<tr>
+					<td><label><wicket:message key="dedicatedTime">Tiempo dedicado:</wicket:message></label><em>*</em>
+					<input wicket:id="dedicatedTime" maxlength="8" /><label>hs</label></td>
+				</tr>
+				<tr>
+					<td><label><wicket:message key="description">Descripci�n:</wicket:message></label><em>*</em>
+					<input wicket:id="description" maxlength="250" rows="2" cols="20"/></td>
+				</tr>
+				<tr>
+					<td><em><label><wicket:message key="req_fields">Required fields</wicket:message></label>*</em></td>
+				</tr>
+				<tr>
+					<td>
+					<div class="form-buttons"><input type="submit" wicket:id="publish" /></div>
+					</td>
+				</tr>
+			</table>
+		</form>
+</fieldset>
+</wicket:panel>
+</body>
+</html>

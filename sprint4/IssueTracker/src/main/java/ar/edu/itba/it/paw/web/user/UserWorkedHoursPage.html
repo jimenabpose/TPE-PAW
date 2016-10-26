@@ -1,0 +1,26 @@
+<html>
+	<body>
+	<wicket:extend>
+		<em><div wicket:id="feedback"/></em>
+		<form wicket:id="form">
+			<div>
+				<label><wicket:message key="user">User</wicket:message>:</label>
+				<select wicket:id="user" ></select>
+			</div>
+			<div>
+				<label><wicket:message key="from">From</wicket:message>:</label>
+				<input wicket:id="from" />
+			</div>
+			<div>
+				<label><wicket:message key="to">To</wicket:message>:</label>
+				<input wicket:id="to" />
+			</div>
+			<br />
+			<input wicket:id="generateReport" type="submit" /> 
+		</form>
+		
+		<wicket:message key="workedHoursMessage">The user has worked:</wicket:message>
+		<div wicket:id="workedHours"/>
+	</wicket:extend>
+	</body>
+</html>
